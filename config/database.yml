@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000 
+
+development:
+  <<: *default
+  database: collage_management_development
+  username: himanshu
+  password: 7089
+
+test:
+  <<: *default
+  database: collage_management_test
+  username: himanshu
+  password: 7089
+
+production:
+  <<: *default
+  database: collage_management_production
+  username: himanshu
+  password: 7089
+  
