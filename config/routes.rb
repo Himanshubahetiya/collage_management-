@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     resources :login, only: [:create]
 
   # root "posts#index"
+  
 end
 

@@ -11,6 +11,7 @@ class Account < ApplicationRecord
     ["role"]
   end
 
+  
 
 
   validates :name, uniqueness: true, if: :student_role?

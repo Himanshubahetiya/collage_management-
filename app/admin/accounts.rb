@@ -11,6 +11,7 @@ ActiveAdmin.register Account do
     column :name
     column :dob
     
+    
     actions
   end
 
