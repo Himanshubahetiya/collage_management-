@@ -29,7 +29,7 @@ class AccountController < ApplicationController
       render json: { errors: account.errors.full_messages }, status: :unprocessable_entity
     end
   end
-
+  
 
 
   def update

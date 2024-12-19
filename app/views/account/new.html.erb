@@ -1,0 +1,14 @@
+<%= form_with(model: @account, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :dob, "Date of Birth" %>
+    <%= form.date_select :dob, 
+        order: [:year, :month, :day], 
+        start_year: 1990, 
+        end_year: Date.today.year,   # Dynamically set end year to current year
+        prompt: { year: 'Select Year', month: 'Select Month', day: 'Select Day' } %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

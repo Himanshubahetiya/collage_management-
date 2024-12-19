@@ -14,6 +14,11 @@ gem "activeadmin"
 gem 'sassc'
 gem 'active_model_serializers'
 gem 'devise'
+gem 'jwt'
+gem 'bcrypt', '~> 3.1.7'
+gem 'byebug'
+
+
 
 
 # Use the Puma web server [https://github.com/puma/puma]
