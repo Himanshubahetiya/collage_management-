@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-ruby "3.0.2"
+ruby "3.2.3"
+
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5", ">= 7.1.5.1"
@@ -17,7 +18,6 @@ gem 'devise'
 gem 'jwt'
 gem 'bcrypt', '~> 3.1.7'
 gem 'byebug'
-
 
 
 
