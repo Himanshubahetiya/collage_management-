@@ -10,7 +10,6 @@ ActiveAdmin.register Account do
     column :role
     column :name
     column :dob
-    
     actions
   end
 
@@ -19,18 +18,17 @@ ActiveAdmin.register Account do
     f.inputs do
       f.input :email 
       f.input :password
-      f.input :role, as: :select, collection: Role.all.map { |r| [r.name, r.id] }
-      f.input :name
-      f.input :dob
+      f.input :role, as: :select, collection: Role.all.map { |r| [r.name, r.id] }, label:"select the role",include_blank: "Select role"
       
+      f.input :dob , start_year: 1950, end_year: Date.today.year ,include_blank: 
+      f.actions
     end
-    f.actions
   end
 
   # Filters configuration
   filter :email  
   filter :role
   filter :name
-  filter :dob 
+  
 end
 

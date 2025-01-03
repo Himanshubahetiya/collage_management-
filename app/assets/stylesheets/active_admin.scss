@@ -15,3 +15,32 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+// app/assets/stylesheets/active_admin.scss
+
+@import "active_admin/mixins"; // Example import
+
+// Example styles
+body {
+    background-color: #f8f9fa; // Light gray background
+}
+
+.header {
+    background-color: #4A90E2; // Navbar color
+    color: white; // Text color
+    padding: 10px 20px; // Padding
+}
+
+.header a {
+    color: white; // Link color
+    text-decoration: none; // No underline
+    padding: 10px; // Padding for links
+}
+
+.header a:hover {
+    background-color: #357ABD; // Hover color
+    color: white; // Ensure text remains white
+}
+
+// Ensure all rules are properly closed
+
